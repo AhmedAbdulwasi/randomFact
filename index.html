@@ -2,19 +2,61 @@
 <html lang="en">
 <head>
 	<title>Fact Generator</title>
-	<link rel="shortcut icon" type="image/png" href="checkmark.png">
-	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" type="image/png" href="img/checkmark.png">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
 </head>
 <body>
-	<h1> Random Facts that I found on the Internet </h1> <br>
-	<h2> Random Facts that I found on the Internet </h2>
-	<h3> Made by Ahmed using HTML, CSS, JS, GitHub, and random API</h3>
-	<div class="randomimg">
-				<img src="checkmark.png" id="randomimg">
+	<section class="hero is-link">
+		<div class="hero-body">
+		  <p class="title">
+			Random <strong>facts</strong> that I found on the internet
+		  </p>
+		  <p class="subtitle">
+			Made by <strong>Ahmed</strong> using HTML, CSS, BULMA, JS, GitHub, and random API
+		  </p>
+		</div>
+	  </section>
+	  <section>
+		<div class="level-item has-text-centered">
+		<figure class="image is-size-7" style="position: relative;top: 50px;width: 300px;">
+			<img src="img/checkmark.png">
+		  </figure>
+		</div>  
+	  </section>
+	  <section>
+		<div class="level-item has-text-centered" style="position: relative;top: 150px;">
+		<article class="media">
+			<div class="media-content">
+			  <div class="content">
+				<div class="box is-size-3" id="fact">
+				<p>
+					
+				</p>
+				</div>
+			  </div>
+			  <nav class="level is-mobile">
+				<div class="level-left">
+				  <a class="level-item">
+					<span class="icon is-small"><i class="fas fa-reply"></i></span>
+				  </a>
+				  <a class="level-item">
+					<span class="icon is-small"><i class="fas fa-retweet"></i></span>
+				  </a>
+				  <a class="level-item">
+					<span class="icon is-small"><i class="fas fa-heart"></i></span>
+				  </a>
+				</div>
+			  </nav>
 			</div>
-			<div id="fact">
-			</div>
-		<button id="btn" onclick="newFaact()">Get a Fact</button>
+		  </article>
+		</div>
+	  </section>
+	  <section>
+		<div class="buttons level-item has-text-centered" style="position: relative;top: 150px;">
+			<button class="button is-primary is-size-3" id="btn" onclick="newFaact()">Generate a Fact</button>
+		</div>
+	  </section>
 		
 	<script src="script.js"></script>
 </body>
